@@ -1,0 +1,41 @@
+@keyframes marquee-effect {
+  0% {
+    transform: translateX(100%);
+  }
+  5% {
+    transform: translateX(70%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 50px; /* Adjust based on your needs */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.animate-marquee {
+  white-space: nowrap;
+  animation: marquee-effect 35s linear infinite;
+  width: auto;
+}
+
+.marquee-content {
+  min-width: 100%;
+  text-align: center; /* Center the text within the container */
+}
+
+.background-image {
+  background-image: url("/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 93.5vh;
+
+  width: 100%;
+}
