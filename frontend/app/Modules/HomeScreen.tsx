@@ -33,9 +33,9 @@ const HomeScreen = async () => {
           <h1>Shop latest</h1>
           <small>EXPLORE ALL</small>
         </div>
-        <Suspense fallback={<div>Loading...</div>}>
+        {/* <Suspense fallback={<div>Loading...</div>}>
           <Products />
-        </Suspense>
+        </Suspense> */}
       </section>
       <section>
         <ImageOverlay />
