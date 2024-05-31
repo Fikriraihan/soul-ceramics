@@ -10,6 +10,8 @@ const PORT = process.env.PORT || 8000;
 
 connectDB();
 
+app.use(cors());
+
 const app = express();
 app.use(express.json());
 app.use(urlencoded({ extended: true }));
