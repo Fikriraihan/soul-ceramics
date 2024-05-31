@@ -4,6 +4,7 @@ import productRoutes from "./routes/productRoutes.js";
 import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 import connectDB from "./config/db.js";
 import dotenv from "dotenv";
+import cors from "cors";
 dotenv.config();
 
 const PORT = process.env.PORT || 8000;
